@@ -1,10 +1,10 @@
 import express from "express";
-// import {
-//   deleteUser,
-//   getUsers,
-//   getUser,
-//   updateUser,
-// } from "../controllers/user";
+import {
+  deleteUser,
+  getUsers,
+  getUser,
+  updateUser,
+} from "../controllers/user.js";
 
 const router = express.Router();
 
@@ -12,16 +12,16 @@ const router = express.Router();
 //   res.send("Hello user, you are logged in");
 // });
 
-// //Update
-// router.put("/:id", updateUser);
+//Update
+router.put("/:id", updateUser);
 
-// //Delete
-// router.delete("/:id", deleteUser);
+//Delete
+router.delete("/:id", deleteUser);
 
-// //Get
-// router.get("/:id", getUser);
+//Get
+router.get("/:id", getUser);
 
-// //Get all
-// router.get("/", getUsers);
+//Get all
+router.get("/", getUsers);
 
 export default router;
